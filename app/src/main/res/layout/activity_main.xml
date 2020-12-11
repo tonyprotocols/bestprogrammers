@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <Button
+        android:id="@+id/btnInspiration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnInspiration"
+        android:layout_marginLeft="40dp"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tvTop3"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOP 3"
+        android:layout_marginRight="80dp"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        />
+
+    <!-- FIRST PERSON-->
+
+    <ImageView
+        android:id="@+id/ivFirstPerson"
+        android:layout_width="115dp"
+        android:layout_height="125dp"
+        android:layout_below="@id/btnInspiration"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/linus" />
+
+    <TextView
+        android:id="@+id/tvFirstPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnInspiration"
+        android:layout_marginTop="11dp"
+        android:text="@string/tvFirstPersonName"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tvLinusDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_below="@id/tvFirstPersonName"
+        android:text="@string/tvFirstPersonDate"/>
+    <TextView
+        android:id="@+id/tvFirstPersonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvLinusDate"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_marginRight="@dimen/tvRightMargin"
+        android:layout_marginTop="-1dp"
+        android:text="@string/tvFirstPersonAbout"
+        android:textColor="@color/black"/>
+
+    <!-- SECOND PERSON-->
+
+    <ImageView
+        android:id="@+id/ivSecondPerson"
+        android:layout_width="111dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/ivFirstPerson"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/denis" />
+
+    <TextView
+        android:id="@+id/tvSecondPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivFirstPerson"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_marginTop="17dp"
+        android:text="@string/tvSecondPersonName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvSecondPersonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSecondPersonName"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:text="@string/tvSecondPersonDate" />
+
+    <TextView
+        android:id="@+id/tvSecondPersonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvSecondPersonDate"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_marginRight="@dimen/tvRightMargin"
+        android:text="@string/tvSecondPersonAbout"
+        android:textColor="@color/black"/>
+
+    <!-- Third Person -->
+    <ImageView
+        android:id="@+id/ivThirdPerson"
+        android:layout_width="111dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/ivSecondPerson"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/guido" />
+
+    <TextView
+        android:id="@+id/tvThirdPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivSecondPerson"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_marginTop="17dp"
+        android:text="@string/tvThirdPersonName"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tvThirdPersonDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvThirdPersonName"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:text="@string/tvThirdPersonDate"
+        />
+
+    <TextView
+        android:id="@+id/tvThirdPersonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@id/tvThirdPersonDate"
+        android:layout_marginLeft="@dimen/tvLeftMargin"
+        android:layout_marginRight="@dimen/tvRightMargin"
+        android:text="@string/tvThirdPersonAbout"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etNewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivThirdPerson"
+        android:layout_marginTop="15dp"
+        android:hint="@string/etNewDescription"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/btnNewDescription"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/btnEditDesc"
+        android:layout_below="@id/etNewDescription"
+        />
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rgRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/btnNewDescription">
+        <RadioButton
+            android:id="@+id/rbFirstPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbFirstPerson"
+            android:layout_below="@id/btnNewDescription"/>
+        <RadioButton
+            android:id="@+id/rbSecondPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbSecondPerson"
+            android:layout_below="@id/btnNewDescription"
+            android:layout_marginLeft="10dp"/>
+
+        <RadioButton
+            android:id="@+id/rbThirdPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbThirdPerson"
+            android:layout_below="@id/btnNewDescription"
+            android:layout_marginLeft="10dp"/>
+    </RadioGroup>
+
+
+
+</RelativeLayout>
